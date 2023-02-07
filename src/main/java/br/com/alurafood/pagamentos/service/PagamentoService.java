@@ -59,7 +59,7 @@ public class PagamentoService {
         repository.deleteById(id);
     }
 
-    public void confirmarPagamento(Long id){
+    public void confirmarPagamento(Long id) {
         Optional<Pagamento> pagamento = repository.findById(id);
 
         if (!pagamento.isPresent()) {
